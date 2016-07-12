@@ -1,0 +1,20 @@
+name: BookExporter
+version: ${project.version}
+main: xyz.thegamecube.bookexporter.BookExporter
+authors: [SirFaizdat]
+description: Export book contents to a file.
+website: http://thegamecube.xyz
+commands:
+  bookexporter:
+    description: Version information for BookExporter.
+  exportbook:
+    description: Export the book you're holding in your hand to a file.
+    aliases: [ebook, outbook, eb]
+    permission: exportbook.use
+permission:
+  exportbook.version:
+    description: Access /bookexporter for version information.
+    default: true
+  exportbook.use:
+    description: Export books.
+    default: op
